@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Url Generator</title>
+</head>
+<body>
+    <div class="wrapper">
+        <form method="POST">
+            {% csrf_token %}
+            {{ form }}
+            <button type="submit">Generate</button>
+        </form>
+        <textarea id="output_area" cols="150" rows="50" placeholder="Output">{{ urls }}</textarea>
+    </div>
+</body>
+</html>
